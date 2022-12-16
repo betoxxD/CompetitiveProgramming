@@ -1,3 +1,4 @@
+#include <algorithm>
 #include <bits/stdc++.h>
 #include <cstdio>
 #include <cstring>
@@ -5,14 +6,17 @@
 
 using namespace std;
 
-vector<int> values;
+int values[500];
 char line[1000000];
 double amount; 
 double pricePerLine;
 long long lineSize;
 
 void clearData() {
-	values.clear();
+	for(int i = 0; i < 500; i++) {
+		values[i] = 0;
+	}
+	strcpy(line, "");
 	amount = 0;
 	pricePerLine = 0;
 	lineSize = 0;
@@ -51,7 +55,6 @@ void readInput() {
 }
 
 int main() {
-	values.reserve(1000);
 	readInput();
 	return 0;
 }
