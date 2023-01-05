@@ -12,29 +12,21 @@ void isKGood(string num) {
 		return;
 	}
 	bool isGood;
-	for(int i = 0; i < num.size(); i++) {
-		isGood = true;
-		if( i + k >= num.size() ){
-			break;
-		}
-		for(int j = i; j <= i + k; j++){
-			bucket[num[j] - '0']++;
-		}
-		for(int j = 0; j <= k; j++){
-			if(bucket[j] == 0) {
-				isGood = false;
-			} 
-			bucket[j] = 0;
-		}
-		for(int j = k + 1; j <= 9; j++){
-			if(bucket[j] != 0) {
-				isGood = false;
-			} 
-			bucket[j] = 0;
-		}
-		if(isGood) {
-			cont++;
-		}
+	isGood = true;
+	for(int j = 0; j < num.size(); j++){
+		bucket[num[j] - '0']++;
+	}
+	for(int j = 0; j <= k; j++){
+		if(bucket[j] == 0) {
+			isGood = false;
+		} 
+		bucket[j] = 0;
+	}
+	for(int j = k + 1; j <= 9; j++){
+		bucket[j] = 0;
+	}
+	if(isGood) {
+		cont++;
 	}
 }
 
