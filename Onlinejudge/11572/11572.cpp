@@ -1,59 +1,80 @@
 #include <algorithm>
 #include <bits/stdc++.h>
 #include <cstdio>
-#include <vector>
 
 using namespace std;
 
 vector<int> numbers;
-unordered_map<int, int> packet;
+unordered_map<int, int> position;
 int cont;
 int maxi;
 
-void clearData() {
+void clearData()
+{
 	cont = 0;
 	maxi = 0;
-	packet.clear();
 	numbers.clear();
+	position.clear();
 }
 
-void addPacket() {
-	for( int i = 0; i < numbers.size(); i++ ){
-		if(packet[numbers[i]] != 0) {
-			packet.clear();
-			maxi = max(maxi, cont);
-			cont = 1;
-		} else {
-			cont++;
-			maxi = max(maxi, cont);
+void addPacket()
+{
+	int start = 0;
+	int number;
+	int count;
+	number = numbers[0];
+	position[number] = 0;
+	for (int i = 1; i < numbers.size(); i++)
+	{
+		number = numbers[i];
+		// printf("[%d - %d] = %d %d\n", start, i, numbers[start], numbers[i]);
+		// printf("%d\n", position[number]);
+		// getchar();
+		if (position[number] == -1)
+		{
+			if(i == numbers.size() - 1){
+				count = i - start + 1;
+				maxi = max(count, maxi);
+			}
 		}
-		packet[numbers[i]]++;
+		else
+		{
+			count = i - start;
+			maxi = max(count, maxi);
+			if (position[number] + 1 > start)
+			{
+				start = position[number] + 1;
+			}
+		}
+		position[number] = i;
 	}
-	packet.clear();
-	cont = 0;
-	for(int i = numbers.size() - 1; i >= 0; i-- ) {
-		if(packet[numbers[i]] != 0) {
-			packet.clear();
-			maxi = max(maxi, cont);
-			cont = 1;
-		} else {
-			cont++;
-			maxi = max(maxi, cont);
-		}
-		packet[numbers[i]]++;
+	if (maxi == 0)
+	{
+		maxi = 1;
 	}
 }
 
-
-void readInput() {
-	int n; scanf("%d", &n);
+void readInput()
+{
+	int n;
+	scanf("%d", &n);
 	int m;
 	int input;
-	while (n--) {
+	int cont;
+	while (n--)
+	{
 		scanf("%d", &m);
-		while (m--) {
+		cont = 0;
+		if (m == 0)
+		{
+			printf("0\n");
+			continue;
+		}
+		while (m--)
+		{
 			scanf("%d", &input);
 			numbers.push_back(input);
+			position[input] = -1;
 		}
 		addPacket();
 		printf("%d\n", maxi);
@@ -61,7 +82,8 @@ void readInput() {
 	}
 }
 
-int main() {
+int main()
+{
 	readInput();
 	return 0;
 }
