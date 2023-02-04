@@ -12,13 +12,19 @@ void readInput()
   bool first = true;
   while (scanf("%d", &n) != EOF)
   {
-    if(n != 0) {
-      if(first) {
+    if (n != 0)
+    {
+      if (first)
+      {
         first = !first;
-      } else {
+      }
+      else
+      {
         printf("\n");
       }
-    } else {
+    }
+    else
+    {
       break;
     }
     numbers.clear();
@@ -34,78 +40,25 @@ void readInput()
     d = 3;
     e = 4;
     f = 5;
-    for (; a < b;)
+    for (; a < b; a++)
     {
-      for (; b < c;)
+      for (b = a + 1; b < c; b++)
       {
-        for (; c < d;)
+        for (c = b + 1; c < d; c++)
         {
-          for (; d < e;)
+          for (d = c + 1; d < e; d++)
           {
-            for (; e < f;)
+            for (e = d + 1; e < f; e++)
             {
-              for (; f < numbers.size();)
+              for (f = e + 1; f < numbers.size(); f++)
               {
                 printf("%d %d %d %d %d %d\n", numbers[a], numbers[b],
-                       numbers[c], numbers[d], numbers[e], numbers[f]);
-                f++;
+                        numbers[c], numbers[d], numbers[e], numbers[f]);
               }
-              if (e < f - 1)
-              {
-                e++;
-              }
-              if (e >= f - 1)
-              {
-                break;
-              }
-              printf("%d %d %d %d %d %d\n", numbers[a], numbers[b], numbers[c],
-                     numbers[d], numbers[e], numbers[f - 1]);
             }
-            if (d < e - 1)
-            {
-              d++;
-            }
-            if (d >= e - 1)
-            {
-              break;
-            }
-            printf("%d %d %d %d %d %d\n", numbers[a], numbers[b], numbers[c],
-                   numbers[d], numbers[e - 1], numbers[f - 1]);
           }
-
-          if (c < d - 1)
-          {
-            c++;
-          }
-          if (c >= d - 1)
-          {
-            break;
-          }
-          printf("%d %d %d %d %d %d\n", numbers[a], numbers[b], numbers[c],
-                 numbers[d - 1], numbers[e - 1], numbers[f - 1]);
         }
-
-        if (b < c - 1)
-        {
-          b++;
-        }
-        if (b >= c - 1)
-        {
-          break;
-        }
-        printf("%d %d %d %d %d %d\n", numbers[a], numbers[b], numbers[c - 1],
-               numbers[d - 1], numbers[e - 1], numbers[f - 1]);
       }
-      if (a < b - 1)
-      {
-        a++;
-      }
-      if (a >= b - 1)
-      {
-        break;
-      }
-      printf("%d %d %d %d %d %d\n", numbers[a], numbers[b - 1], numbers[c - 1],
-             numbers[d - 1], numbers[e - 1], numbers[f - 1]);
     }
   }
 }
