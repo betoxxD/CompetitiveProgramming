@@ -26,4 +26,4 @@
 
 ## :warning: License
 
-Distributed under the no License. See LICENSE.txt for more information.
+Distributed under the Apache License. See LICENSE for more information.
