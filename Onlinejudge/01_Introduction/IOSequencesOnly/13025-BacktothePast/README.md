@@ -15,7 +15,7 @@ Tomar el código que el problema presenta y reemplazar la fecha y el día.
     <!-- Add your space complexity here, e.g. $$O(n)$$ -->
     $$O(1)$$
 
-# Code
+# Código
 ```cpp
 #include <bits/stdc++.h>
 
@@ -23,7 +23,7 @@ using namespace std;
 
 int main()
 {
-	printf("May 29, 2013 Wednesday\n");
-	return 0;
+printf("May 29, 2013 Wednesday\n");
+return 0;
 }
 ```

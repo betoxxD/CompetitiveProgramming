@@ -22,7 +22,7 @@ $$n = {-1 + \sqrt{1 - 4(-2w)}\over 2}$$
 
 Si analizamos bien la ecuación de segundo grado, podemos notar que el único valor variable es $c$ (recordar la forma de una ecuación de estas características, la cual es $ax² + bx +c = 0$), por lo tanto, en la fórmula general el único valor variable será $w$. Además de esto, considerar también que el valor que necesitamos es el positivo (porque buscamos cuantas filas podemos armar). De esta manera, el resultado entero de la fórmula es el número de filas que podemos formar con $w$ guerreros.
 
-# Complexity
+# Complejidad
 - Complejidad de tiempo:
     <!-- Add your time complexity here, e.g. $$O(n)$$ -->
     $$O(1)$$
@@ -31,7 +31,7 @@ Si analizamos bien la ecuación de segundo grado, podemos notar que el único va
     <!-- Add your space complexity here, e.g. $$O(n)$$ -->
     $$O(1)$$
 
-# Code
+# Código
 ```cpp
 #include <bits/stdc++.h>
 
