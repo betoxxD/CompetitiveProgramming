@@ -4,7 +4,7 @@ Verificar si la caja cabe en la maleta.
 
 # Enfoque
 <!-- Describe your approach to solving the problem. -->
-El problema es sencillo, simplemente es necesario verificar si la caja cabe en la maleta. Debido a que la maleta siempre mide lo mismo ($$20*20*20$$),el problema se reduce a verificar que las tres medidas ingresadas sean menores al tamaño de la caja.
+El problema es sencillo, simplemente es necesario verificar si la caja cabe en la maleta. Debido a que la maleta siempre mide lo mismo ($20 * 20 * 20$),el problema se reduce a verificar que las tres medidas ingresadas sean menores al tamaño de la caja.
 
 # Complejidad
 - Complejidad de tiempo:
