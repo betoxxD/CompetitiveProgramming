@@ -13,7 +13,7 @@ El problema pide contar el número de saltos largos y cortos que mario tendrá q
 
 - Complejidad de espacio:
     <!-- Add your space complexity here, e.g. $$O(n)$$ -->
-    $$O(n)$$
+    $$O(1)$$
 
 # Código
 ```cpp
