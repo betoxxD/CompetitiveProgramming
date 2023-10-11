@@ -1,7 +1,8 @@
+
 <div align='center'>
 
-<h1>Competitive Programming</h1>
-<p>This is a repo where I store all my solutions to distinct competitive problems in diferent platforms. I started adding a Readme in every problem describing my first thoughts, approachs and solution in Spanish.</p>
+<h1>Programación competitiva</h1>
+<p>Repositorio para apoyo en la resolución de problemas de programación competitiva en español. Incluye soluciones a problemas con su respectiva explicación y recomendaciones de algunos libros.</p>
 
 <h4> <span> · </span> <a href="https://github.com/betoxxd/CompetitiveProgramming/blob/master/README.md"> Documentation </a> <span> · </span> <a href="https://github.com/betoxxd/CompetitiveProgramming/issues"> Report Bug </a> <span> · </span> <a href="https://github.com/betoxxd/CompetitiveProgramming/issues"> Request Feature </a> </h4>
 
@@ -10,20 +11,27 @@
 
 # :notebook_with_decorative_cover: Table of Contents
 
-- [About the Project](#star2-about-the-project)
+- [Acerca del proyecto](#star2-acerca-del-proyecto)
+- [Libros recomendados](#books-libros-recomendados)
 - [Roadmap](#compass-roadmap)
 - [License](#warning-license)
 
 
-## :star2: About the Project
+## :star2: Acerca del proyecto
+
+## :books: Libros recomendados
+
+[<img src="https://m.media-amazon.com/images/I/61fA4Wy5lXS._SL1303_.jpg" width="200px">](https://www.amazon.com.mx/Programaci%C3%B3n-competitiva-CP4-Volumen-concursantes/dp/841223801X)
 
 ## :compass: Roadmap
 
-* [ ] Update folder structure
-* [ ] Add Readme to older problems
-* [ ] Improve the documentation
-
+* [ ] Actualización de las estructuras de carpetas
+* [ ] Agregar README a problemas antiguos
+* [ ] Mejorar la presentación
+* [ ] Incluir recomendaciones
+* [ ] Agregar un índice de problemas
 
 ## :warning: License
 
 Distributed under the Apache License. See LICENSE for more information.
+
