@@ -1,23 +1,19 @@
-# Intuition
-<!-- Describe your first thoughts on how to solve this problem. -->
-The problem is really easy. It says that the particle at time ***t*** has ***v*** of velocity, and is asking for ***2t***. It could be done in a simple operation using the distance formula.
+# Intuición
+El problema es bastante sencillo. Indica que la partícula en el tiempo ***t*** tiene una velocidad ***v***, y pregunta por ***2t***. Esto se puede hacer en una operación simple utilizando la fórmula de distancia.
 
-# Approach
-<!-- Describe your approach to solving the problem. -->
-We have to consider the distance formula, which says that $d = v * t + 1/2 * a$ where $d = distance$, $v = velocity$, $t = time$ and $a = aceleration$. Considering aceleration as 0 we get that $d = v * t$. The problem wants to know the distance after the double of the time that we know. Adding this, the final formula looks like this.
+# Enfoque
+Tenemos que considerar la fórmula de distancia, que dice que $d = v * t + 1/2 * a$ donde $d = distancia$, $v = velocidad$, $t = tiempo$ y $a = aceleración$. Considerando la aceleración como 0, obtenemos que $d = v * t$. El problema quiere saber la distancia después del doble del tiempo que conocemos. Sumando esto, la fórmula final se ve así:
 
 $$d = v * 2t$$
 
-# Complexity
-- Time complexity:
-    <!-- Add your time complexity here, e.g. $$O(n)$$ -->
-    $$O(1)$$
+# Complejidad
+- Complejidad de tiempo:
+    La complejidad de tiempo es $$O(1)$$, ya que la operación realizada es una multiplicación simple y no depende del tamaño de los datos de entrada.
 
-- Space complexity:
-    <!-- Add your space complexity here, e.g. $$O(n)$$ -->
-    $$O(1)$$
+- Complejidad de espacio:
+    La complejidad de espacio es $$O(1)$$, ya que no se utiliza espacio adicional en función del tamaño de los datos de entrada.
 
-# Code
+# Código
 ```cpp
 #include <bits/stdc++.h>
 
