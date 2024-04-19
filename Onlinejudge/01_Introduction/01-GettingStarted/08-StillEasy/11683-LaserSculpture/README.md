@@ -4,10 +4,10 @@ La intuición detrás de este enfoque radica en el hecho de que cuando el númer
 
 # Enfoque
 <!-- Describe your approach to solving the problem. -->
-    * Iteramos a través de la secuencia de alturas del bloque.
-    * Comparamos cada altura con la siguiente.
-    * Si la altura siguiente es mayor que la altura actual, añadimos la diferencia entre estas alturas al contador de veces que se enciende el láser.
-    * Al finalizar la iteración, el contador contiene el número total de veces que se enciende el láser.
+* Iteramos a través de la secuencia de alturas del bloque.
+* Comparamos cada altura con la siguiente.
+* Si la altura siguiente es mayor que la altura actual, añadimos la diferencia entre estas alturas al contador de veces que se enciende el láser.
+* Al finalizar la iteración, el contador contiene el número total de veces que se enciende el láser.
 
 # Complejidad
 - Complejidad de tiempo:
