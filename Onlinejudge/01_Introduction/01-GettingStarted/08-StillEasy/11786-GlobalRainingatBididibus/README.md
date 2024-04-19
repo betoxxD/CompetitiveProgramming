@@ -6,7 +6,7 @@ Para resolver este problema, necesitamos seguir la topografía del universo Bidi
 <!-- Describe your approach to solving the problem. -->
 * Leemos la entrada que contiene la representación simplificada del universo Bididibus.
 * Iteramos sobre cada símbolo en la entrada.
-* Si encontramos una montaña ('\'), la agregamos a una pila para rastrear las montañas.
+* Si encontramos una montaña ('\\'), la agregamos a una pila para rastrear las montañas.
 * Si encontramos una caída ('/'), calculamos la cantidad de agua que se acumula en el valle asociado restando la posición de la caída de la posición de la última montaña en la pila. Luego, eliminamos la montaña de la pila.
 * Sumamos todas las cantidades de agua calculadas para obtener el resultado para ese caso de prueba.
 
